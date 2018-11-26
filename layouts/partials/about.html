@@ -1,0 +1,19 @@
+<!-- About Section -->
+{{- if isset $.Params "about" -}}
+<section id="{{ .Scratch.Get "about" }}" class="content-section text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h2>{{ with $.Site.GetPage "page" "about.md" }}{{ .Title }}{{ end }}</h2>
+	<p>
+          {{ with $.Site.GetPage "page" "about.md" }}
+            {{ .Content }}
+          {{ end }}
+	</p>
+      </div>
+    </div>
+  </div>
+</section>
+{{- end -}}
+
+

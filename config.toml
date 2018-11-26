@@ -1,0 +1,8 @@
+baseURL = "http://example.com/"
+languageCode = "en-us"
+title = "Montreal Athletic Therapy"
+theme = "hugograyscale"
+[Params]
+    # Provide some metadata for search and indexing services
+    description = "A licensed athletic therapist based in Montreal"
+    author = "Daniel Wolfe"
