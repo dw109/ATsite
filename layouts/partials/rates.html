@@ -1,16 +1,16 @@
 {{ $directory := "content/" }}
-{{ $filename := "about.md" }}
+{{ $filename := "rates.md" }}
 {{ if (where (readDir $directory) "Name" $filename) }}
-  <section class="content-section" id="about">
+  <section class="content-section" id="rates">
     <div class="container middle-xs">
       <div class="row center-xs">
         <div class="col-xs-12">
-          <h1>{{ with $.Site.GetPage "page" "about.md" }}{{ .Title }}{{ end }}</h1>
+          <h1>{{ with $.Site.GetPage "page" "rates.md" }}{{ .Title }}{{ end }}</h1>
         </div>
       </div>
       <div class="row">
         <div class="col-xs-12 middle-xs">
-          {{ with $.Site.GetPage "page" "about.md" }}
+          {{ with $.Site.GetPage "page" "rates.md" }}
             {{ .Content }}
           {{ end }}
         </div>

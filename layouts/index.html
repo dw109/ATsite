@@ -1,7 +1,4 @@
 {{- define "main" -}}
-    {{- $.Scratch.Add "about" "about" -}}
-    {{- $.Scratch.Add "download" "download" -}}
-    {{- $.Scratch.Add "contact" "contact" -}}
     {{- range $pagesect := (slice "about" "download" "contact") -}}
         {{- if isset $.Params $pagesect -}}
           {{- $param_pagesect := index $.Params $pagesect -}}
@@ -20,12 +17,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            {{- range $pagesect := ( slice "about" "download" "contact" ) -}}
-              {{- if isset $.Params $pagesect -}}
+            {{- range $pagesect := ( slice "about" "therapy" "clinic" "field" "hours" "rates" "contact" ) -}}
                 <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger improve-contrast-box" href="#{{ $.Scratch.Get $pagesect }}">{{- $.Scratch.Get $pagesect -}}</a>
+                  <a class="nav-link js-scroll-trigger improve-contrast-box" href="#{{  $pagesect }}">{{-  $pagesect -}}</a>
                 </li>
-              {{- end -}}
             {{- end -}}
             {{- if isset $.Params "menu" -}}
               {{- range $menuitem := $.Params.menu -}}
@@ -50,7 +45,7 @@
                 <h1 class="brand-heading">{{ default "" $.Params.intro.header | safeHTML }}</h1>
                 <p class="intro-text">{{- default "" $.Params.intro.text | safeHTML -}}</p>
               </div>
-              <a href="#{{ .Scratch.Get "about" }}" class="btn btn-circle js-scroll-trigger">
+              <a href="#about" class="btn btn-circle js-scroll-trigger">
                 <i class="fa fa-angle-double-down animated"></i>
               </a>
             </div>
@@ -61,11 +56,17 @@
     {{ end }}
 
     <!-- About Section -->
+    {{ partial "intro.html" . }}
     {{ partial "about.html" . }}
+    {{ partial "athletictherapy.html" . }}
+    {{ partial "clinic.html" . }}
+    {{ partial "field.html" . }}
+    {{ partial "hours.html" . }}
+    {{ partial "rates.html" . }}
 
     <!-- Download Section -->
     {{- if isset $.Params "download" -}}
-    <section id="{{ .Scratch.Get "download" }}" class="download-section content-section text-center">
+    <section id="download" class="download-section content-section text-center">
       <div class="container">
         <div class="col-lg-8 mx-auto">
             <div class="improve-contrast-box">
@@ -79,7 +80,7 @@
 
     <!-- Contact Section -->
     {{- if isset $.Params "contact" -}}
-    <section id="{{ .Scratch.Get "contact" }}" class="content-section text-center">
+    <section id="contact" class="content-section text-center">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">

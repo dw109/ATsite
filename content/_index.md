@@ -20,23 +20,15 @@ socialhandles:
 #    github: "runningstream"
 #    googplus: "goog_addr_here"
 
-menu:
-    -
-        url: "http://startbootstrap.com/template-overviews/grayscale/"
-        name: "Original"
+menu: []
 
 intro:
     header: "Montreal Athletic Therapy"
-    text: "A free, responsive, one page Hugo/Bootstrap theme originally created by Start Bootstrap."
+    text: "Dan Wolfe needs to decide what should go here"
 
 about: {}
 
-download:
-    rename: "Links"
-    header: "Download Grayscale"
-    text: '<p>You can download Grayscale for free from the Github page.</p><a href="https://github.com/runningstream/hugograyscale/" class="btn btn-default btn-lg">Visit Download Page</a>'
-
 contact:
-    header: "Contact Start Bootstrap"
-    text: '<p>Feel free to leave us a comment on the <a href="https://github.com/runningstream/hugograyscale/">Grayscale template Github page</a> to give some feedback about this theme!</p>'
+    header: "Contact Daniel Wolfe"
+    text: '<p>Coming soon</p>'
 ---
