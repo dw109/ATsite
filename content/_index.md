@@ -24,7 +24,7 @@ menu: []
 
 intro:
     header: "Montreal Athletic Therapy"
-    text: "Dan Wolfe needs to decide what should go here"
+    text: ""
 
 about: {}
 
