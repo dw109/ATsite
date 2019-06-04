@@ -30,5 +30,5 @@ about: {}
 
 contact:
     header: "Contact Daniel Wolfe"
-    text: '<p>Coming soon</p>'
+    text: '<p><strong>phone: </strong>514-805-7266</p><p><strong>email: </strong>dwathletictherapy@gmail.com</p>'
 ---
