@@ -8,4 +8,4 @@ draft: false
 * **Friday:** 7am - 1pm
 * **Saturday:** Closed
 
-_All visits by appointment only_
+_All visits by appointment only. Home visits available upon request_
